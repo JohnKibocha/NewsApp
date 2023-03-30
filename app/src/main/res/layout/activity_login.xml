@@ -20,18 +20,18 @@
         app:layout_constraintVertical_bias="0.18" />
 
     <EditText
-        android:id="@+id/inputUserName"
+        android:id="@+id/inputEmailAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/input_background"
-        android:drawableLeft="@drawable/person"
+        android:drawableLeft="@drawable/email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="UserName"
-        android:inputType="textPersonName"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingRight="20dp"
@@ -55,10 +55,10 @@
         android:paddingTop="15dp"
         android:paddingRight="20dp"
         android:paddingBottom="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputUserName"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmailAddress"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/inputUserName"
-        app:layout_constraintTop_toBottomOf="@+id/inputUserName" />
+        app:layout_constraintStart_toStartOf="@+id/inputEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailAddress" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -68,6 +68,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/btn_background"
+        app:backgroundTint="@color/colorBlackShade"
         android:text="Login"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
@@ -85,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
